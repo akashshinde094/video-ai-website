@@ -9,8 +9,14 @@ export async function handler(event) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        version: "YOUR_MODEL_VERSION_ID",
-        input: { prompt }
+        version: "9f747673945c62801b13b84701c783929c0ee784e4748ec062204894dda1a351",
+        input: {
+  prompt: prompt,
+  fps: 24,
+  width: 1024,
+  height: 576,
+        }
+               }
       })
     });
 
